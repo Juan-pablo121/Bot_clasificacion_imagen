@@ -1,2 +1,3 @@
-0 Palomas
-1 Gorriones
+0 Carros
+1 Buses
+2 Motos
