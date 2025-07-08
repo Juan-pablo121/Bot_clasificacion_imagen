@@ -30,13 +30,12 @@ async def check(ctx):
             try:
                 class_name = get_class('keras_model.h5','labels.txt',file_name)
                 await ctx.send(class_name)
-                if class_name[0]== "Palomas":
-                    await ctx.send('Esto es una paloma, las palomas suelen comer semillas pero tambien comen bayas bellotas y lombrices, pueden vivir tanto en ciudades como en areas rurales.')
-                elif class_name[0]== "Gorriones":
-                    await  ctx.send("Esto es un gorrion, los gorriones comen principalmente granos semillas o insectos, los gorriones suelen vivir en entornos urbanos cerca de los humanos en ciudades, pueblos y granjas.")
+                if class_name[0]== "Carros":
+                    await ctx.send('Esto es un carro, los carros son vehiculos que pueden transportar entre 1 y 5 personas, poseen 4 llantas y incluyen sistemas de seguridad como cinturones o frenos.')
+                elif class_name[0]== "Buses":
+                    await  ctx.send("Esto es un bus, los buses son vehiculos que pueden transportar muchas personas al mismo tiempo, son mas grandes que los carros o motos y generalmente tienen 6 ruedas .")
+                elif class_name[0]== "Motos":
+                    await  ctx.send("Esto es una moto, las motos son vehiculos que pueden transportar 1 o 2 personas, tienen 2 ruedas y son agiles y faciles de maniobrar.")    
             except:
-                await ctx.send('La clasificacion ha fallado')    
-    else:
-        await ctx.send('No hay archivos adjuntos')
-
+                await ctx.send('La clasificacion ha fallado')  
 bot.run("")
